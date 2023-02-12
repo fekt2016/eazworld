@@ -1,9 +1,14 @@
 import React from 'react'
+import Header from '../component/Layout/Header';
+import Nav from '../component/Layout/Nav';
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <div>Home</div>
+    <>
+    <Nav  />
+    <Header  />
+    </>
   )
 }
 
-export default Home
+export default HomePage;

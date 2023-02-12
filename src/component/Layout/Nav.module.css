@@ -1,0 +1,45 @@
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 3rem;
+}
+.nav h1 {
+    font-size: 2rem;
+}
+.logo {
+  height: 4rem;
+  width: 4rem;
+  margin-right: 5px;
+}
+.list {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 4rem;
+  flex: 1;
+}
+.list li {
+  padding: 1rem;
+}
+.list a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: var(--color-primary-900);
+  font-family: Arial, Helvetica;
+  font-weight: 500;
+}
+.list a:hover {
+  color: var(--color-secoundary-900);
+  border-bottom: 2px solid var(--color-secoundary-900);
+}
+.btn {
+
+  padding: 0 2rem;
+
+
+
+
+  display: flex;
+  justify-content: space-between;
+}
