@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 0rem 3rem;
 }
 .nav h1 {
     font-size: 2rem;
@@ -36,8 +36,6 @@
 .btn {
 
   padding: 0 2rem;
-
-
 
 
   display: flex;

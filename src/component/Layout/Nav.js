@@ -1,8 +1,9 @@
 import React from "react";
 import classes from "./Nav.module.css";
 import logo from "../../assest/edo.png";
-import { NavLink } from "react-router-dom";
-import Button from "../../UI/Button";
+import { Link, NavLink } from "react-router-dom";
+import ButtonBlack from "../../UI/ButtonBlack";
+import ButtonWhite from "../../UI/ButtonWhite";
 
 const Nav = () => {
   return (
@@ -23,15 +24,19 @@ const Nav = () => {
           <NavLink to="/aboutus">about</NavLink>
         </li>
         <li>
-          <NavLink to="/support">buy</NavLink>
+          <NavLink to="/support">support</NavLink>
         </li>
         <li>
           <NavLink to="/contact">contact</NavLink>
         </li>
       </ul>
       <div className={classes.btn}>
-        <Button>login</Button>
-        <Button>get started</Button>
+        <ButtonWhite>
+          <Link to='/signin'>Sign In</Link>
+        </ButtonWhite>
+        <ButtonBlack>
+          <Link to='/getstarted'>get started</Link>
+        </ButtonBlack>
       </div>
     </nav>
   );

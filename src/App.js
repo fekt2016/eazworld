@@ -9,6 +9,9 @@ import ManagePayment from "./pages/ManagePayment";
 import AccountProfile from "./pages/AccountProfile";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import SignIn from './pages/SignIn'
+import Support from "./pages/Support";
+import GetStarted from './pages/GetStarted';
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -17,8 +20,12 @@ const router = createBrowserRouter([
     path: "/",
     element: <HomePage />,
     children: [
-      { path: "/about", element: <About /> },
+
+      { path: "/aboutus", element: <About /> },
       { path: "/contact", element: <Contact /> },
+      { path: "/support", element: <Support /> },
+      {path: '/signin', element: <SignIn  />},
+      {path: '/getstarted', element: <GetStarted  />}
     ],
   },
 
@@ -31,6 +38,7 @@ const router = createBrowserRouter([
         path: "buy",
         element: <Buy />,
       },
+
       { path: "sell", element: <Sell /> },
       { path: "manageOrder", element: <ManageOrder /> },
       { path: "setting", element: <Setting /> },

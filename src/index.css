@@ -52,6 +52,10 @@
   --color-secoundary-700: #ffc337;
   --color-secoundary-800: #ffbe26;
   --color-secoundary-900: #f2a900;
+
+
+  --color-white: #fff;
+  --color-black: #000;
 }
 
 body {
