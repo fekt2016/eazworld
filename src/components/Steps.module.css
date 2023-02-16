@@ -1,0 +1,106 @@
+.step {
+  padding: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-left {
+  padding: 2rem;
+  flex: 1;
+}
+.container-right {
+  flex: 1;
+  background-image: url("../assest/stepssjpeg.jpeg");
+  background-position: center;
+  background-repeat: no repeat;
+  background-size: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.heading {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  background-color: var(--color-secoundary-900);
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+}
+
+.stepcard {
+  width: 100%;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stepcard:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.stepnum {
+  background-color: var(--color-secoundary-900);
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  height: 5rem;
+  width: 5rem;
+
+}
+.one {
+     animation: 5s infinite alternate movement;
+     -webkit-animation: 5s infinite alternate movement;
+}
+.two {
+    animation: 4s infinite alternate movement;
+    -webkit-animation: 4s infinite alternate movement;
+}
+.three {
+    animation: 3s infinite alternate movement;
+    -webkit-animation: 3s infinite alternate movement;
+}
+.four {
+    animation: 2s infinite alternate movement;
+    -webkit-animation: 2s infinite alternate movement;
+}
+.text {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+
+@keyframes movement {
+    from {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+}
+
+    to {
+        transform: translateX(500%);
+        -webkit-transform: translateX(500%);
+        -moz-transform: translateX(500%);
+        -ms-transform: translateX(500%);
+        -o-transform: translateX(500%);
+}
+  }
+
+@media screen and (max-width) {
+  .step {
+    flex-direction: column;
+  }
+}

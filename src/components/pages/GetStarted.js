@@ -2,7 +2,7 @@ import React from 'react'
 
 const GetStarted = () => {
   return (
-    <div>GetStarted pages</div>
+    <h1>GetStarted pages</h1>
   )
 }
 

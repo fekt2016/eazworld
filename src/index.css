@@ -3,23 +3,10 @@
 }
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'lato', 'Open Sans', 'Roboto',Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 62.5%;
-  line-height: 24px;
-  font-weight: 400;
-  --font-family-sans-serif: -apple-system,
-  BlinkMacSystemFont, "Segoe UI",padding
-    Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans",
-    sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+  /* font-weight: 400; */
 
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87); */
-  /* s */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -64,6 +51,11 @@ body {
 
 ul {
   list-style: none;
-  margin: 0;
+  margin: 0 ;
   padding: 0;
+
+}
+main {
+  text-align: center;
+  margin: 0  auto;
 }

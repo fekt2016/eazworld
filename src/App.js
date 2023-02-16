@@ -1,31 +1,36 @@
 import React from "react";
-import HomePage from "./pages/Home";
-import Dashboard from "./pages/Dashboard";
-import Buy from "./pages/Buy";
-import Sell from "./pages/Sell";
-import ManageOrder from "./pages/ManageOrder";
-import Setting from "./pages/Setting";
-import ManagePayment from "./pages/ManagePayment";
-import AccountProfile from "./pages/AccountProfile";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import SignIn from './pages/SignIn'
-import Support from "./pages/Support";
-import GetStarted from './pages/GetStarted';
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from './components/Layout/Root';
+import About from './components/pages/About';
+import Contact from './components/pages/Contact';
+import Support from './components/pages/Support';
+import SignIn from './components/pages/SignIn';
+import GetStarted from './components/pages/GetStarted';
+import Dashboard from './components/pages/Dashboard'
+import Buy from './components/pages/Buy';
+import Sell from './components/pages/Sell';
+import ManageOrder from './components/pages/ManageOrder';
+import ManagePayment from './components/pages/ManagePayment';
+import Setting from './components/pages/Setting';
+import AccountProfile from './components/pages/AccountProfile';
+import Homepage from "./components/pages/Homepage";
+import ErrorPage from './components/pages/Error';
+
+
+
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <HomePage />,
+    path:'/',
+    element: <RootLayout />,
+    errorElement: <ErrorPage  />,
     children: [
-
-      { path: "/aboutus", element: <About /> },
-      { path: "/contact", element: <Contact /> },
-      { path: "/support", element: <Support /> },
-      {path: '/signin', element: <SignIn  />},
-      {path: '/getstarted', element: <GetStarted  />}
+      {index: true, element: <Homepage  />},
+      { path: "aboutus", element: <About /> },
+      { path: "contact", element: <Contact /> },
+      { path: "support", element: <Support /> },
+      {path: 'signin', element: <SignIn  />},
+      {path: 'getstarted', element: <GetStarted  />}
     ],
   },
 
