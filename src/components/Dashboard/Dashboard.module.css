@@ -1,0 +1,10 @@
+.dashboard {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    background-color: aqua;
+    width: 83%;
+    height: 2000px;
+
+
+}

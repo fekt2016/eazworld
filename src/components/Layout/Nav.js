@@ -1,9 +1,10 @@
 import React from "react";
 import classes from "./Nav.module.css";
 import logo from "../../assest/edo.png";
-import { Link, NavLink } from "react-router-dom";
-import ButtonBlack from "../UI/ButtonBlack";
-import ButtonWhite from "../UI/ButtonWhite";
+import { Link } from "react-router-dom";
+import Button from "../UI/Button";
+
+import NavItem from "./NavItem";
 
 const Nav = () => {
   return (
@@ -11,32 +12,15 @@ const Nav = () => {
       <img className={classes.logo} src={logo} alt="eaz logo" />
       <h1>EazWorld</h1>
       <ul className={classes.list}>
-        <li>
-          <NavLink to="/">home</NavLink>
-        </li>
-        <li>
-          <NavLink to="dashboard/buy">buy</NavLink>
-        </li>
-        <li>
-          <NavLink to="/dashboard/sell">sell</NavLink>
-        </li>
-        <li>
-          <NavLink to="aboutus">about</NavLink>
-        </li>
-        <li>
-          <NavLink to="support">support</NavLink>
-        </li>
-        <li>
-          <NavLink to="contact">contact</NavLink>
-        </li>
+       <NavItem  />
       </ul>
-      <div className={classes.btn}>
-        <ButtonWhite>
+      <div className={classes.btnbox}>
+        <Button className={classes.btnwhite}>
           <Link to='signin'>Sign In</Link>
-        </ButtonWhite>
-        <ButtonBlack>
+        </Button>
+        <Button className={classes.btn}>
           <Link to='getstarted'>get started</Link>
-        </ButtonBlack>
+        </Button>
       </div>
     </nav>
   );

@@ -1,9 +1,8 @@
 import React from 'react'
+import GetStartedForm from '../GetStartedForm';
 
 const GetStarted = () => {
-  return (
-    <h1>GetStarted pages</h1>
-  )
+  return <GetStartedForm  />
 }
 
 export default GetStarted

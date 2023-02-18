@@ -3,10 +3,10 @@
 }
 
 :root {
-  font-family: 'lato', 'Open Sans', 'Roboto',Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "lato", "Open Sans", "Roboto", Inter, Avenir, Helvetica, Arial,
+    sans-serif;
   font-size: 62.5%;
   /* font-weight: 400; */
-
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -40,7 +40,7 @@
   --color-secoundary-800: #ffbe26;
   --color-secoundary-900: #f2a900;
 
-
+  --facebook: #3b5998;
   --color-white: #fff;
   --color-black: #000;
 }
@@ -51,11 +51,14 @@ body {
 
 ul {
   list-style: none;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
-
 }
 main {
   text-align: center;
-  margin: 0  auto;
+  margin: 0 auto;
+}
+.position {
+  position: absolute;
+  right: 0;
 }

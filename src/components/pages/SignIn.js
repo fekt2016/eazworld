@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import classes from './Signin.module.css';
+import SignInForm from '../SignInForm';
 
 const SignIn = () => {
-  return (
-    <h1>SignIn pages</h1>
-  )
+  return <div className={classes.signin}>
+  <SignInForm  />
+  </div>
 }
 
 export default SignIn;

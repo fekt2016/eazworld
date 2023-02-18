@@ -1,0 +1,27 @@
+.button {
+  border: none;
+  padding: 1rem 2rem !important;
+  font-size: 1.6rem;
+
+  text-transform: capitalize;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  margin-right: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  -webkit-transform: ;
+  -moz-transform: ;
+  -ms-transform: ;
+  -o-transform: ;
+}
+.button a {
+      text-decoration: none;
+}
+
+@media screen and (max-width: 992px) {
+  .button {
+    display: none;
+  }
+}
