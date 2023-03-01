@@ -10,6 +10,6 @@
     font-weight: 500;
   }
   .item a:hover {
-    color: var(--color-secoundary-900);
-    border-bottom: 2px solid var(--color-secoundary-900);
+    color: var(--color-sec-900);
+    border-bottom: 2px solid var(--color-sec-900);
   }

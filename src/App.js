@@ -18,6 +18,7 @@ import RootDashboard from "./components/pages/RootDashboard";
 import ErrorPage from "./components/pages/Error";
 import Homepage from "./components/pages/Homepage";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -49,6 +50,7 @@ const router = createBrowserRouter([
         element: <Buy />,
       },
       { path: "sell", element: <Sell /> },
+      // {path:"receiver",element: <Receiver />},
       { path: "manageOrder", element: <ManageOrder /> },
       { path: "setting", element: <Setting /> },
       { path: "managepayment", element: <ManagePayment /> },

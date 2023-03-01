@@ -1,0 +1,48 @@
+.group {
+  margin: 1rem 0;
+  width: 60%;
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.group label,
+.group input {
+  display: block;
+}
+
+.group label {
+  font-weight: bold;
+  color: #464646;
+  margin-bottom: 0.5rem;
+  margin-right: 1rem;
+  text-transform: capitalize;
+}
+
+.group input {
+  flex: 1;
+  font: inherit;
+  padding: 1rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.group input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+
+.group.invalid input {
+  border-color: red;
+  background: #fbdada;
+}
+@media (min-width: 768px) {
+  .group {
+    align-items: center;
+    flex-direction: row;
+  }
+}

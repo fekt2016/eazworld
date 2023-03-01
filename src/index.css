@@ -34,11 +34,13 @@
   --color-primary-800: #090909;
   --color-primary-900: #000;
 
-  --color-secoundary-500: #ffd77b;
-  --color-secoundary-600: #ffc848;
-  --color-secoundary-700: #ffc337;
-  --color-secoundary-800: #ffbe26;
-  --color-secoundary-900: #f2a900;
+
+  --color-sec-400: #fff1d0;
+  --color-sec-500: #ffd77b;
+  --color-sec-600: #ffc848;
+  --color-sec-700: #ffc337;
+  --color-sec-800: #ffbe26;
+  --color-sec-900: #f2a900;
 
   --facebook: #3b5998;
   --color-white: #fff;

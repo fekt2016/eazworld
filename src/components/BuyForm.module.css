@@ -1,0 +1,69 @@
+.buyForm {
+  padding: 3rem;
+  width: 100%;
+  background-color: var(--color-gray-100);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.headbox {
+  padding: 1rem;
+  margin-bottom: 4rem;
+  background-color: var(--color-sec-400);
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+.heading {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--color-sec-400);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.btn {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+.currency-option {
+  display: flex;
+  align-items: center;
+}
+.currency-img {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.selected-logo {
+  height: 2rem;
+  margin-right: 1rem;
+}
+.select {
+  flex: 1;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.icon {
+  margin-right: 1rem;
+}

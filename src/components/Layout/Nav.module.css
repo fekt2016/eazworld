@@ -31,7 +31,7 @@
 }
 .btn a {
   text-decoration: none;
-  color: var(--color-secoundary-900);
+  color: var(--color-sec-900);
 }
 .btnwhite {
   transition: all .8s;
@@ -41,7 +41,7 @@
   -o-transition: all .8s;
 }
 .btnwhite a {
-  color: var(--color-secoundary-900);
+  color: var(--color-sec-900);
 }
 .btnwhite:hover {
   background-color: var(--color-black);

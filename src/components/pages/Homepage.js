@@ -6,20 +6,7 @@ import RateCard from "../RateCard";
 import Service from '../Service';
 import Steps from '../Steps';
 
-// const Homepage = () => {
-//   return (
-//     <>
-//     <Header  />
-//     <main>
-//     <Service  />
-//      <RateCard  />
-//     <Steps  />
-//     <Footer  />
-//     </main>
-//     Homepage
-//     </>
-//   )
-// }
+
 
 export const Homepage = () => {
   return (

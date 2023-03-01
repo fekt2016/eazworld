@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import SellForm from '../SellForm'
 
 const Sell = () => {
   return (
-    <h1>Sell pages</h1>
+    <SellForm  />
   )
 }
 

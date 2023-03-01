@@ -29,7 +29,7 @@
   background-color: var(--color-black);
 }
 .btn a{
-  color: var(--color-secoundary-900);
+  color: var(--color-sec-900);
 }
 @media screen and (max-width: 1200px) {
   .header {

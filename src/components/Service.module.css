@@ -1,7 +1,7 @@
 .service {
   background-color: var(--color-black);
   padding: 2rem;
-  color: var(--color-secoundary-900);
+  color: var(--color-sec-900);
   margin-bottom: 3rem;
 
   display: flex;

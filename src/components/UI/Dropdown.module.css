@@ -1,0 +1,28 @@
+.dropdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.item {
+  width: 100%;
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item:hover {
+  background-color: var(--color-sec-400);
+}
+.item a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  margin-left: 1rem;
+  color: var(--color-sec-900);
+}
+
+.dropdown-icon {
+  color: var(--color-sec-900);
+}

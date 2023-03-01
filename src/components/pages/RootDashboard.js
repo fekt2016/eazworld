@@ -5,19 +5,20 @@ import SideNav from "../Dashboard/SideNav";
 // import Testimonial from "../Dashboard/Testimonial";
 import classes from './RootDashboard.module.css';
 
-const Dashboard = () => {
+const RootDashboard = () => {
   return (
-    <>
-      <Header />
-      <main>
-        <div className={classes.container}>
-          <SideNav />
-          <Outlet />
-
-        </div>
-      </main>
-    </>
+    <div className={classes.container}>
+      <header className={classes.header}>
+        <Header  />
+      </header>
+      <nav className={classes.nav}>
+        <SideNav  />
+      </nav>
+      <div className={classes.main}>
+        <Outlet  />
+      </div>
+    </div>
   );
 };
 
-export default Dashboard;
+export default RootDashboard;

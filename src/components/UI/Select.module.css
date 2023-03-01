@@ -1,0 +1,45 @@
+.group {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group label {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #464646;
+  text-transform: capitalize;
+  margin-right: 1rem;
+}
+.select {
+  flex: 1;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.currency-option {
+  display: flex;
+  align-items: center;
+}
+.currency-img {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+.selected-logo {
+  height: 2rem;
+  margin-right: 1rem;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}

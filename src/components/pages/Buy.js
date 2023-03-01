@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import BuyForm from "../BuyForm";
 
 const Buy = () => {
   return (
-    <h1> buy page</h1>
-  )
-}
+    <>
+      <BuyForm />
+    </>
+  );
+};
 
-export default Buy
+export default Buy;
