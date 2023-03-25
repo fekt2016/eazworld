@@ -1,47 +1,77 @@
 import React, { useEffect, useState } from "react";
 import classes from "./RateCard.module.css";
-import axios from 'axios';
+// import axios from 'axios';
 
 const RateCard = () => {
   const [crypto, setcrypto] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [httpError, setHttpError] = useState();
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios(
+      const response = await fetch(
         "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=250&page=1&sparkline=false"
       );
-        console.log(response)
+      const responseData = await response.json();
 
-      const [
-        bitcoin,
-        ethereum,
-        tether,
-        binancecoin,
-        cardano,
-        dogecoin,
-        solana,
-        litecoin,
+      if (!response.ok) {
+        throw new Error("Something went wrong!");
+      }
 
-      ] = response.data;
+      // ] = responseData;
+      const bitcoin = responseData[0];
+      const ethereum = responseData[1];
+      const tether = responseData[2];
+      const binance = responseData[3];
+      const litecoin = responseData[15];
+      const ripple = responseData[5];
+      const bitcoinCash = responseData[29];
+      const shiba = responseData[14];
+      const cardano = responseData[7];
+      const doge = responseData[9];
+      const solana = responseData[12];
+      const dash = responseData[63];
 
       let data = [];
       data.push(
         bitcoin,
         ethereum,
         tether,
-        binancecoin,
-        cardano,
-        dogecoin,
-        solana,
+        binance,
         litecoin,
-
+        ripple,
+        bitcoinCash,
+        shiba,
+        cardano,
+        doge,
+        solana,
+        dash
       );
-        console.log(data);
+
       setcrypto(data);
+      setIsLoading(false);
     };
-    fetchData();
+
+    fetchData().catch((error) => {
+      setIsLoading(false);
+      setHttpError(error.message);
+    });
   }, []);
 
+  if (isLoading) {
+    return (
+      <section>
+        <p>Loding.....</p>
+      </section>
+    );
+  }
+  if (httpError) {
+    return (
+      <section>
+        <p>{httpError}</p>
+      </section>
+    );
+  }
   return (
     <section>
       <ul className={classes.rate}>

@@ -1,17 +1,18 @@
 import React from "react";
-import classes from "./Dashboard.module.css";
+// import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+
 import btc from "../../assest/btc.png";
 import bch from "../../assest/bch.png";
-import busd from '../../assest/busd.png'
-import IconDashboard from '../UI/SvgIcon/IconDashboard';
-
+import busd from "../../assest/busd.png";
+import IconDashboard from "../UI/SvgIcon/IconDashboard";
+import classes from "./Dashboard.module.css";
 
 const Dashboard = () => {
   return (
     <section className={classes.dashboard}>
       <div className={classes.headbox}>
-        <IconDashboard  width='25px' height='25px'/>
+        <IconDashboard width="25px" height="25px" />
         <h1 className={classes.heading}>dashboard</h1>
       </div>
       <div className={classes.container}>
@@ -76,7 +77,7 @@ const Dashboard = () => {
           </div>
         </div>
         <div className={classes.price}>
-        <div className={classes.instock}>
+          <div className={classes.instock}>
             <h3 className={classes.subheading}>instock</h3>
           </div>
           <div className={classes.market}>
@@ -96,7 +97,7 @@ const Dashboard = () => {
           </div>
         </div>
         <div className={classes.price}>
-        <div className={classes.instock}>
+          <div className={classes.instock}>
             <h3 className={classes.subheading}>instock</h3>
           </div>
           <div className={classes.market}>
@@ -116,7 +117,7 @@ const Dashboard = () => {
           </div>
         </div>
         <div className={classes.price}>
-        <div className={classes.instock}>
+          <div className={classes.instock}>
             <h3 className={classes.subheading}>instock</h3>
           </div>
           <div className={classes.market}>

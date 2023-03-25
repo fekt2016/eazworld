@@ -1,8 +1,11 @@
 import React from 'react'
+import Error from './Error';
+
 
 const About = () => {
   return (
-    <h1>About</h1>
+    <Error  />
+
   )
 }
 

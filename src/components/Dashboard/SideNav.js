@@ -1,14 +1,14 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Form, NavLink } from "react-router-dom";
 import classes from "./SideNav.module.css";
 import IconDashboard from "../UI/SvgIcon/IconDashboard";
 import IconBuy from "../UI/SvgIcon/IconBuy";
 import IconSell from "../UI/SvgIcon/IconSell";
 import IconManageOrder from "../UI/SvgIcon/IconManageOrder";
 import IconManagePayment from "../UI/SvgIcon/IconManagePayment";
-import IconManageProfile from "../UI/SvgIcon/IconManageProfile";
 import IconSetting from "../UI/SvgIcon/IconSetting";
-import logo from "../../assest/edo.png";
+import IconLogout from "../UI/SvgIcon/Logout";
+import logo from "../../assest/logo100.png";
 const SideNav = () => {
   return (
     <nav className={classes.nav}>
@@ -67,22 +67,7 @@ const SideNav = () => {
             sell
           </NavLink>
         </li>
-        <li className={classes.item}>
-          <NavLink
-            to="accountProfile"
-            className={({ isActive }) =>
-              isActive ? classes.active : undefined
-            }
-          >
-            <IconManageProfile
-              className={classes.icon}
-              color="#f2a900"
-              height="30px"
-              width="30px"
-            />{" "}
-            account profile
-          </NavLink>
-        </li>
+
         <li className={classes.item}>
           <NavLink
             to="managepayment"
@@ -115,9 +100,10 @@ const SideNav = () => {
             manage order
           </NavLink>
         </li>
+
         <li className={classes.item}>
           <NavLink
-            to="setting"
+            to="accountProfile"
             className={({ isActive }) =>
               isActive ? classes.active : undefined
             }
@@ -127,9 +113,21 @@ const SideNav = () => {
               color="#f2a900"
               height="30px"
               width="30px"
-            />
+            />{" "}
             setting
           </NavLink>
+        </li>
+        <li className={classes.item}>
+          <Form action="logout" method="Post">
+            <button className={classes.logout}>
+              <IconLogout
+                className={classes.logout}
+                height="30px"
+                width="30px"
+              />
+              logout
+            </button>
+          </Form>
         </li>
       </ul>
     </nav>

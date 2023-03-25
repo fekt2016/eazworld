@@ -1,5 +1,5 @@
 import React from 'react';
-import SellForm from '../SellForm'
+import SellForm from '../Dashboard/SellForm'
 
 const Sell = () => {
   return (

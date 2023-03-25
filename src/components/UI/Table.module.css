@@ -1,0 +1,72 @@
+.table {
+  width: 100%;
+}
+.table thead {
+  background-color: var(--color-sec-900);
+}
+.table tbody tr td,
+table thead tr th {
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.table thead tr th {
+  padding: 1rem;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.table tbody tr td {
+  padding: 1rem;
+}
+.table tbody tr:nth-of-type(even) {
+  background-color: var(--color-sec-400);
+}
+.page {
+  margin-bottom: 1rem;
+}
+.page label {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.page select {
+  border: none;
+  border-bottom: 1px solid var(--color-black);
+  padding: 0.5rem;
+  text-transform: capitalize;
+}
+.showing {
+  width: 100%;
+  border-top: 1px solid var(--color-black);
+  padding: 1rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showing span {
+    font-size: 1.6rem;
+}
+.btn {
+  border: none;
+  background-color: var(--color-sec-500);
+  padding: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+}
+.btn:hover {
+    background-color: var(--color-sec-900);
+}
+.num{
+    font-size: 1.6rem;
+    padding: 1rem;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "./Nav.module.css";
-import logo from "../../assest/edo.png";
+import logo from "../../assest/logo67.png";
 import { Link } from "react-router-dom";
 import Button from "../UI/Button";
 
@@ -10,7 +10,7 @@ const Nav = () => {
   return (
     <nav className={classes.nav}>
       <img className={classes.logo} src={logo} alt="eaz logo" />
-      <h1>EazWorld</h1>
+
       <ul className={classes.list}>
        <NavItem  />
       </ul>

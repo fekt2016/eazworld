@@ -1,12 +1,25 @@
 .signinform {
-  /* margin: 0 auto; */
-  padding: 2rem;
   width: 100%;
+  height: 100vh;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 52rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-gray-100);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 .header {
   text-align: center;
@@ -16,15 +29,9 @@
   font-size: 3rem;
   text-transform: capitalize;
 }
-.main {
-  width: 100%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .form {
-  width: 70%;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -34,9 +41,9 @@
 .group,
 .group1 {
   padding: 1rem;
-  width: 50%;
+  width: 100%;
   display: flex;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .group {
   flex-direction: column;
@@ -47,28 +54,26 @@
 .group1 {
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .group1 div {
   display: flex;
   flex-direction: column;
 }
-.group1 div a {
-
+.get a {
+  margin: 0.5rem;
   font-size: 1.6rem;
   color: var(--color-black);
   text-decoration: none;
-  border-bottom: 1px solid #000;
-  text-align: start;
-  margin: .5rem;
-
-
+  border-bottom: 1px solid var(--color-black);
 }
 .remember {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 1.6rem;
+  margin-left: 2rem;
 }
 .label {
   font-size: 1.6rem;
@@ -76,21 +81,44 @@
   margin-left: 2rem;
 }
 .input {
-  font-size: 2rem;
-  padding: 1rem 3rem;
-  width: 100%;
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  width: 70%;
   border: 1px solid var(--color-gray-500);
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   -ms-border-radius: 100px;
   -o-border-radius: 100px;
-  margin-top: 1rem;
 }
 .input:focus {
   outline: none;
+  background-color: var(--color-sec-400);
 }
+.input:focus:invalid {
+  border-bottom: 2px solid #f00;
+  background-color: #fcc;
+}
+
 .btn {
   color: white;
   background-color: var(--color-black);
+}
+.error {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  color: red;
+}
+.login {
+  background-color: var(--color-sec-900);
+  padding: 1rem;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 0;
+  left: 13rem;
+  color: var(--color-white);
+}
+.text {
+  text-align: center;
+  font-size: 1.6rem;
 }

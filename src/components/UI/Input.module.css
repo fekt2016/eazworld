@@ -1,6 +1,5 @@
 .group {
   margin: 1rem 0;
-  width: 60%;
   font-size: 1.6rem;
 
   display: flex;
@@ -33,7 +32,7 @@
 .group input:focus {
   outline: none;
   border-color: #4f005f;
-  background: #f6dbfc;
+  background: var(--color-sec-400);
 }
 
 .group.invalid input {

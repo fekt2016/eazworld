@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from './Button.module.css';
 
-const ButtonBlack = (props) => {
+const Button = (props) => {
   return (
-    <button className={`${classes.button} + ${props.className}`}>{props.children}</button>
+    <button className={`${classes.button} + ${props.className}`} type={`${props.type}` || 'button'}>{props.children}</button>
   )
 }
 
-export default ButtonBlack;
+export default Button;

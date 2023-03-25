@@ -9,7 +9,7 @@ const Dropdown = () => {
     <ul className={classes.dropdown}>
       <li className={classes.item}>
         <IconBxUserCircle className={classes['dropdown-icon']}  height="25px" width="25px"/>
-        <Link>profile</Link>
+        <Link to='accountProfile'>profile</Link>
       </li>
       <li className={classes.item}>
         <IconSetting className={classes['dropdown-icon']} height="25px" width="25px"/>

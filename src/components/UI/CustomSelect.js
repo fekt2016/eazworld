@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "./Select.module.css";
+import classes from "./CustomSelect.module.css";
 import Select, { components } from "react-select";
 
 const Option = (props) => {
@@ -36,7 +36,7 @@ const CustomSelect = (props) => {
     <div className={classes.group}>
       <label htmlFor="currency">{props.label}</label>
       <Select
-        id="currency"
+        name={props.name}
         value={selectedOption}
         options={props.options}
         onChange={currencyHandleChange}

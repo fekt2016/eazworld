@@ -1,6 +1,6 @@
-
-.dashboard{
+.dashboard {
   width: 100%;
+  background-color: lime;
 }
 .headbox {
   background-color: var(--color-gray-100);
@@ -22,12 +22,9 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.26);
   border-radius: 20px;
 
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-
-
 }
 
 .price {
@@ -45,8 +42,8 @@
   font-size: 1.6rem;
   color: #5a9500;
   text-transform: capitalize;
-  animation: instock 5s  infinite;
-  -webkit-animation: instock 10s  infinite;
+  animation: instock 5s infinite;
+  -webkit-animation: instock 10s infinite;
 }
 .instock {
   background-color: var(--color-gray-100);
@@ -101,24 +98,23 @@
   background-color: greenyellow;
 }
 
-
 @keyframes instock {
-from {
+  from {
     transform: translateX(0%);
     -webkit-transform: translateX(0%);
     -moz-transform: translateX(0%);
     -ms-transform: translateX(0%);
     -o-transform: translateX(0%);
-}
+  }
 
-to {
+  to {
     transform: translateX(100%);
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
     opacity: 0;
-}
+  }
 }
 /*
 .container {
